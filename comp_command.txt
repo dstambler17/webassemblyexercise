@@ -1,0 +1,1 @@
+emcc reverse.cpp -Os -s WASM=1 -s SIDE_MODULE=1 -s "EXPORTED_FUNCTIONS=['_malloc', '_free']" -s "EXTRA_EXPORTED_RUNTIME_METHODS=['ccall']" -o reverse.js -std=c++11  -s ASSERTIONS=1
